@@ -1,8 +1,9 @@
 package com.bridgelabs.linecomparison;
 import java.util.Scanner;
 public class LineComparison {
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         System.out.println("Welcome to Line Comparison Program");
+
         Line line1 = getLine();
         double lengthOfLine = getLength(line1);
         System.out.println("length of line 1 is " + lengthOfLine);
@@ -14,8 +15,10 @@ public class LineComparison {
         System.out.println(line2);
         if(lengthOfLine == lengthOfLine2)
             System.out.println("both lines are equal");
+        else if (lengthOfLine > lengthOfLine2)
+            System.out.println("Line1 greater than Line2");
         else
-            System.out.println("lines are not equal");
+            System.out.println("Line2 is greater than Line1");
     }
     public static Line getLine() {
         double x1,y1,x2,y2;
